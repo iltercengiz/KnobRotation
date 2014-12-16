@@ -143,11 +143,6 @@
 				CLASSPREFIX = CAY;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Cayuse Concepts";
-				TargetAttributes = {
-					D222295D189A984200BEF0E6 = {
-						DevelopmentTeam = KEZ5U9JRFM;
-					};
-				};
 			};
 			buildConfigurationList = D2222959189A984200BEF0E6 /* Build configuration list for PBXProject "Circular Knob Demo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -293,7 +288,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Circular Knob Demo/Circular Knob Demo-Prefix.pch";
 				INFOPLIST_FILE = "Circular Knob Demo/Circular Knob Demo-Info.plist";
@@ -307,7 +301,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Circular Knob Demo/Circular Knob Demo-Prefix.pch";
 				INFOPLIST_FILE = "Circular Knob Demo/Circular Knob Demo-Info.plist";
