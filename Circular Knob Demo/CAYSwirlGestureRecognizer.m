@@ -18,26 +18,28 @@
 @implementation CAYSwirlGestureRecognizer
 
 - (id)initWithTarget:(id)target action:(SEL)action {
-    
-    if (self = [super initWithTarget:target action:action]) {
+    self = [super initWithTarget:target action:action];
+    if (self) {
         self.target = target;
         self.action = action;
     }
-    
     return self;
 }
 
 
 - (void)touchesBegan:(NSSet*)touches withEvent:(UIEvent *)event {
+    
     [super touchesBegan:touches withEvent:event];
     
     if (touches.count > 1) {
 		self.state = UIGestureRecognizerStateFailed;
 		return;
 	}
+    
 }
 
 - (void)touchesMoved:(NSSet*)touches withEvent:(UIEvent *)event {
+    
     [super touchesMoved:touches withEvent:event];
     
     UITouch *touch = [touches anyObject];
@@ -46,9 +48,12 @@
     self.previousAngle = [self getTouchAngle:[touch previousLocationInView:touch.view]];
     
     if ([self.target respondsToSelector:self.action]) {
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Warc-performSelector-leaks"
         [self.target performSelector:self.action withObject:self];
-
+#pragma clang diagnostic pop
     }
+    
 }
 
 - (void)touchesEnded:(NSSet*)touches withEvent:(UIEvent *)event {
@@ -99,6 +104,7 @@
     }
     
     return -1;
+    
 }
 
 @end
