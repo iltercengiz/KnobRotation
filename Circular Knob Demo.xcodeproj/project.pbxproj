@@ -16,23 +16,10 @@
 		D2222975189A984200BEF0E6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2222973189A984200BEF0E6 /* Main.storyboard */; };
 		D2222978189A984200BEF0E6 /* CAYViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2222977189A984200BEF0E6 /* CAYViewController.m */; };
 		D222297A189A984200BEF0E6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2222979189A984200BEF0E6 /* Images.xcassets */; };
-		D2222981189A984200BEF0E6 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2222980189A984200BEF0E6 /* XCTest.framework */; };
-		D2222982189A984200BEF0E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2222961189A984200BEF0E6 /* Foundation.framework */; };
-		D2222983189A984200BEF0E6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2222965189A984200BEF0E6 /* UIKit.framework */; };
 		D2222998189A99D000BEF0E6 /* knob.png in Resources */ = {isa = PBXBuildFile; fileRef = D2222996189A99D000BEF0E6 /* knob.png */; };
 		D2222999189A99D000BEF0E6 /* knob@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D2222997189A99D000BEF0E6 /* knob@2x.png */; };
 		D222299C189A9B9600BEF0E6 /* CAYSwirlGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = D222299B189A9B9600BEF0E6 /* CAYSwirlGestureRecognizer.m */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		D2222984189A984200BEF0E6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D2222956189A984200BEF0E6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D222295D189A984200BEF0E6;
-			remoteInfo = "Circular Knob Demo";
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D222295E189A984200BEF0E6 /* Circular Knob Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Circular Knob Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,7 +36,6 @@
 		D2222976189A984200BEF0E6 /* CAYViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAYViewController.h; sourceTree = "<group>"; };
 		D2222977189A984200BEF0E6 /* CAYViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAYViewController.m; sourceTree = "<group>"; };
 		D2222979189A984200BEF0E6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D222297F189A984200BEF0E6 /* Circular Knob DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Circular Knob DemoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2222980189A984200BEF0E6 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D2222996189A99D000BEF0E6 /* knob.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = knob.png; sourceTree = "<group>"; };
 		D2222997189A99D000BEF0E6 /* knob@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "knob@2x.png"; sourceTree = "<group>"; };
@@ -65,16 +51,6 @@
 				D2222964189A984200BEF0E6 /* CoreGraphics.framework in Frameworks */,
 				D2222966189A984200BEF0E6 /* UIKit.framework in Frameworks */,
 				D2222962189A984200BEF0E6 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D222297C189A984200BEF0E6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2222981189A984200BEF0E6 /* XCTest.framework in Frameworks */,
-				D2222983189A984200BEF0E6 /* UIKit.framework in Frameworks */,
-				D2222982189A984200BEF0E6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				D222295E189A984200BEF0E6 /* Circular Knob Demo.app */,
-				D222297F189A984200BEF0E6 /* Circular Knob DemoTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -159,24 +134,6 @@
 			productReference = D222295E189A984200BEF0E6 /* Circular Knob Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D222297E189A984200BEF0E6 /* Circular Knob DemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D2222993189A984200BEF0E6 /* Build configuration list for PBXNativeTarget "Circular Knob DemoTests" */;
-			buildPhases = (
-				D222297B189A984200BEF0E6 /* Sources */,
-				D222297C189A984200BEF0E6 /* Frameworks */,
-				D222297D189A984200BEF0E6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D2222985189A984200BEF0E6 /* PBXTargetDependency */,
-			);
-			name = "Circular Knob DemoTests";
-			productName = "Circular Knob DemoTests";
-			productReference = D222297F189A984200BEF0E6 /* Circular Knob DemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -189,9 +146,6 @@
 				TargetAttributes = {
 					D222295D189A984200BEF0E6 = {
 						DevelopmentTeam = KEZ5U9JRFM;
-					};
-					D222297E189A984200BEF0E6 = {
-						TestTargetID = D222295D189A984200BEF0E6;
 					};
 				};
 			};
@@ -209,7 +163,6 @@
 			projectRoot = "";
 			targets = (
 				D222295D189A984200BEF0E6 /* Circular Knob Demo */,
-				D222297E189A984200BEF0E6 /* Circular Knob DemoTests */,
 			);
 		};
 /* End PBXProject section */
@@ -227,13 +180,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D222297D189A984200BEF0E6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -248,22 +194,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D222297B189A984200BEF0E6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D2222985189A984200BEF0E6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D222295D189A984200BEF0E6 /* Circular Knob Demo */;
-			targetProxy = D2222984189A984200BEF0E6 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D222296A189A984200BEF0E6 /* InfoPlist.strings */ = {
@@ -385,48 +316,6 @@
 			};
 			name = Release;
 		};
-		D2222994189A984200BEF0E6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Circular Knob Demo.app/Circular Knob Demo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Circular Knob Demo/Circular Knob Demo-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Circular Knob DemoTests/Circular Knob DemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		D2222995189A984200BEF0E6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Circular Knob Demo.app/Circular Knob Demo";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Circular Knob Demo/Circular Knob Demo-Prefix.pch";
-				INFOPLIST_FILE = "Circular Knob DemoTests/Circular Knob DemoTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -446,14 +335,7 @@
 				D2222992189A984200BEF0E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		D2222993189A984200BEF0E6 /* Build configuration list for PBXNativeTarget "Circular Knob DemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D2222994189A984200BEF0E6 /* Debug */,
-				D2222995189A984200BEF0E6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
